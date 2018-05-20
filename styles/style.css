@@ -1,0 +1,36 @@
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+.header {
+    margin: auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: X-large;
+    width: 100%;
+    text-align: left;
+    border: 2px solid Gainsboro;
+    background-color: #F8F8F8;
+    padding: 3%;
+    list-style-type: none;
+
+}
+
+html, body {
+    width: 100%;
+}
+.mainTable {
+    margin: 30% auto;
+    width: 70%;
+    border: 2px solid Gainsboro;
+}
+
+.innerTable {
+    margin: 30% auto;
+    width: 70%;
+    border: 2px solid Gainsboro;
+}
+
+td {
+    border: 2px solid Gainsboro;
+    padding: 4%;
+    font-size: 90%;
+    padding-left: 10%;
+}
