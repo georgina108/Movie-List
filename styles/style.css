@@ -22,6 +22,7 @@ html, body {
     border: 2px solid Gainsboro;
 }
 
+
 .innerTable {
     margin: 30% auto;
     width: 70%;
@@ -33,4 +34,16 @@ td {
     padding: 4%;
     font-size: 90%;
     padding-left: 10%;
+}
+
+.innerTable, th {
+    margin: 30% auto;
+    width: 70%;
+    border: none;
+    padding-bottom: 5%;
+}
+
+#searchButton {
+    background-color: white;
+    border: 1px solid Gainsboro;  
 }
