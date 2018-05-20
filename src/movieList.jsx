@@ -6,12 +6,24 @@ class MovieList extends React.Component {
     }
   }
 
+ handleMovieListChanges(newList) {
+    if(newList.length > 0) {
+      this.setState({
+        movies: newList
+      })
+    } else {
+      this.setState({
+        movies: [{title:"No movie by that name found"}]
+      })
+    }
+  }
+
   render () {
     return (
       <tbody>
         <tr>
           <th>
-            <Search movies={this.state.movies}/>
+            <Search movies={this.state.movies} handleMovieListChanges = {this.handleMovieListChanges.bind(this)}/>
           </th>
         </tr>
           {this.state.movies.map((movie, i) => 

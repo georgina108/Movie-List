@@ -2,8 +2,7 @@ class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
-      moviesToList:[]
+      value: ''
     }
   }
   
@@ -21,8 +20,7 @@ class Search extends React.Component {
           newMovieList.push(movies[i])
         }
     }
-    this.state.moviesToList = newMovieList
-    console.log(this.state.moviesToList)
+    this.props.handleMovieListChanges(newMovieList)
   }
   
 
