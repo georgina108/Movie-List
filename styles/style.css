@@ -43,7 +43,12 @@ td {
     padding-bottom: 5%;
 }
 
-#searchButton {
-    background-color: white;
-    border: 1px solid Gainsboro;  
+input[type=button] {
+    border-radius: 8px;
+    margin-left: 2px;
+}
+
+.button {
+    background-color: #008CBA;
+    color: white;
 }

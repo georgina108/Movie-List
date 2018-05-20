@@ -21,6 +21,11 @@ class MovieList extends React.Component {
   render () {
     return (
       <tbody>
+         <tr>
+          <th>
+            <CreateMovieList/>
+          </th>
+        </tr>
         <tr>
           <th>
             <Search movies={this.state.movies} handleMovieListChanges = {this.handleMovieListChanges.bind(this)}/>
