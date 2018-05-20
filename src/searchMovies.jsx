@@ -23,7 +23,6 @@ class Search extends React.Component {
     this.props.handleMovieListChanges(newMovieList)
   }
   
-
   render () {
     return (
        <div>

@@ -16,10 +16,18 @@
 html, body {
     width: 100%;
 }
+
+ body {
+    background-image: url("backgroundImage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 .mainTable {
     margin: 30% auto;
     width: 70%;
     border: 2px solid Gainsboro;
+    background-color: white;
 }
 
 

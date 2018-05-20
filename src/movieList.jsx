@@ -6,7 +6,15 @@ class MovieList extends React.Component {
     }
   }
 
- handleMovieListChanges(newList) {
+handleMovieAdditions(addition) {
+  var newState = this.state.movies;
+  newState.push({title:addition});
+  this.setState({
+    movies: newState
+  })
+}
+
+handleMovieListChanges(newList) {
     if(newList.length > 0) {
       this.setState({
         movies: newList
@@ -23,7 +31,7 @@ class MovieList extends React.Component {
       <tbody>
          <tr>
           <th>
-            <CreateMovieList/>
+            <CreateMovieList handleMovieAdditions={this.handleMovieAdditions.bind(this)}/>
           </th>
         </tr>
         <tr>
