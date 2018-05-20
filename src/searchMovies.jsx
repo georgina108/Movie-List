@@ -2,7 +2,8 @@ class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ''
+      value: '',
+      moviesToList:[]
     }
   }
   
@@ -13,18 +14,26 @@ class Search extends React.Component {
   }
 
   handleClick () {
-    console.log(this.state.value)
+    var newMovieList = [];
+    var movies = this.props.movies
+    for(var i = 0; i < movies.length; i++) {
+        if(movies[i].title.toLowerCase().includes(this.state.value.toLowerCase())) {
+          newMovieList.push(movies[i])
+        }
+    }
+    this.state.moviesToList = newMovieList
+    console.log(this.state.moviesToList)
   }
   
 
   render () {
     return (
        <div>
-        <input type="text" value={this.state.value} onChange={this.handleChange} />
+        <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)} />
         <input
           type="button"
           value="Go!"
-          onClick={this.handleClick}
+          onClick={this.handleClick.bind(this)}
         />
       </div>
     )

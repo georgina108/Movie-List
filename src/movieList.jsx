@@ -11,7 +11,7 @@ class MovieList extends React.Component {
       <tbody>
         <tr>
           <th>
-            <Search/>
+            <Search movies={this.state.movies}/>
           </th>
         </tr>
           {this.state.movies.map((movie, i) => 
