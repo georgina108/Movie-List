@@ -6,28 +6,26 @@ class Search extends React.Component {
     }
   }
   
-  
-  
   handleChange (e) {
     this.setState({
-      value: e.target.value
-    });
-    this.props.handleSearch(this.state.value)
+      value:e.target.value
+    })
+  }
+
+  handleClick () {
+    console.log(this.state.value)
   }
   
 
   render () {
     return (
-       <div className="search-bar form-inline">
+       <div>
+        <input type="text" value={this.state.value} onChange={this.handleChange} />
         <input
-          className="form-control"
-          type="text"
-          value={this.state.value}
-          // onChange={this.handleChange.bind(this)}
+          type="button"
+          value="Go!"
+          onClick={this.handleClick}
         />
-        <button className="btn hidden-sm-down" id="searchButton" onClick={this.handleChange.bind(this)}>
-        <span className="glyphicon glyphicon-search"></span>
-        </button>
       </div>
     )
   }
