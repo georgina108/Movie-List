@@ -43,12 +43,14 @@ handleMovieListChanges(newList) {
           <CheckWatchedMovies/>
         </tr>
           {this.state.movies.map((movie, i) => 
+           
             <tr key={i}>
               <td>{movie.title}</td>
               <td>
                 <button text="watched" className="watchedButton">watched</button>
               </td>
             </tr>
+          
           )} 
       </tbody>
 
