@@ -13,7 +13,13 @@ class CreateMovieList extends React.Component {
   }
 
   handleClickAdd() {
-    this.props.handleMovieAdditions(this.state.input)
+    var arr = this.state.input.split(' ');
+    var camelCaseStr = arr.map(function(word) {
+     word = word.split('');
+     word[0]= word[0].toUpperCase();
+     return word.join('') 
+    }).join(' ');
+    this.props.handleMovieAdditions(camelCaseStr)
   }
 
 render () {
