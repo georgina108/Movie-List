@@ -25,30 +25,32 @@ html, body {
 }
 .mainTable {
     margin: 30% auto;
-    width: 70%;
+    width: 60%;
     border: 2px solid Gainsboro;
     background-color: white;
-}
-
-
-.innerTable {
-    margin: 30% auto;
-    width: 70%;
-    border: 2px solid Gainsboro;
+    padding: none;
 }
 
 td {
-    border: 2px solid Gainsboro;
+    border-bottom: 2px solid Gainsboro;
+    border-top: 2px solid Gainsboro;
     padding: 4%;
     font-size: 90%;
     padding-left: 10%;
 }
 
 .innerTable, th {
-    margin: 30% auto;
-    width: 70%;
+    margin: 10% auto;
+    width: 60%;
     border: none;
     padding-bottom: 5%;
+}
+
+.innerMostTable, th {
+    margin: 0%;
+    width: 70%;
+    border: none;
+    padding-bottom: 0%;
 }
 
 input[type=button] {
@@ -57,6 +59,80 @@ input[type=button] {
 }
 
 .button {
-    background-color: #008CBA;
+    background-color: green;
     color: white;
 }
+
+.toWatch {
+    /*background-color:red;*/
+    width: 50%;
+    padding-right:60;
+    padding-bottom:0%;
+    margin-bottom: 0%
+    margin-left:100%;
+}
+
+.watched {
+   /* background-color:blue;*/
+    margin-right: 0%
+    width: 50%;
+    padding-left:0%;
+    padding-bottom:0%;
+    padding-right:0%;
+    margin-bottom: 0%
+    margin-right:0%;
+}
+
+.search{
+    border:solid white;
+}
+
+button, .watchedButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 0px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.button2 {
+    background-color: white;
+    border: 2px solid Gainsboro;
+    border-radius: 0px;
+    color: black;
+    padding: 5px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+
+
+
+
+

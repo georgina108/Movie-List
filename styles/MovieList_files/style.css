@@ -1,0 +1,57 @@
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+.header {
+    margin: auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: X-large;
+    width: 100%;
+    text-align: left;
+    border: 2px solid Gainsboro;
+    background-color: #F8F8F8;
+    padding: 3%;
+    list-style-type: none;
+
+}
+
+html, body {
+    width: 100%;
+}
+
+ body {
+    background-image: url("backgroundImage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.mainTable {
+    margin: 30% auto;
+    width: 70%;
+    border: 2px solid Gainsboro;
+    background-color: white;
+}
+
+td {
+    border-bottom: 2px solid Gainsboro;
+    border-top: 2px solid Gainsboro;
+    padding: 4%;
+    font-size: 90%;
+    padding-left: 10%;
+}
+
+.innerTable, th {
+    margin: 30% auto;
+    width: 70%;
+    border: none;
+    padding-bottom: 5%;
+}
+
+input[type=button] {
+    border-radius: 8px;
+    margin-left: 2px;
+}
+
+.button {
+    background-color: #008CBA;
+    color: white;
+}
+

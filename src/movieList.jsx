@@ -34,14 +34,20 @@ handleMovieListChanges(newList) {
             <CreateMovieList handleMovieAdditions={this.handleMovieAdditions.bind(this)}/>
           </th>
         </tr>
-        <tr>
+        <tr className="search">
           <th>
             <Search movies={this.state.movies} handleMovieListChanges = {this.handleMovieListChanges.bind(this)}/>
           </th>
         </tr>
+        <tr>
+          <CheckWatchedMovies/>
+        </tr>
           {this.state.movies.map((movie, i) => 
             <tr key={i}>
               <td>{movie.title}</td>
+              <td>
+                <button text="watched" className="watchedButton">watched</button>
+              </td>
             </tr>
           )} 
       </tbody>
