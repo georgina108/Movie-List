@@ -2,7 +2,8 @@ class MovieList extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      movies: this.props.movies
+      movies: this.props.movies,
+      notFound: "No movie by that name found"
     }
   }
 
@@ -15,15 +16,9 @@ handleMovieAdditions(addition) {
 }
 
 handleMovieListChanges(newList) {
-    if(newList.length > 0) {
       this.setState({
         movies: newList
       })
-    } else {
-      this.setState({
-        movies: [{title:"No movie by that name found"}]
-      })
-    }
   }
 
   render () {
@@ -42,16 +37,20 @@ handleMovieListChanges(newList) {
         <tr>
           <CheckWatchedMovies/>
         </tr>
-          {this.state.movies.map((movie, i) => 
-           
-            <tr key={i}>
-              <td>{movie.title}</td>
-              <td>
-                <button text="watched" className="watchedButton">watched</button>
-              </td>
-            </tr>
-          
-          )} 
+
+        {this.state.movies.length ?  this.state.movies.map((movie, i) => 
+                <tr key={i}>
+                 <td>{movie.title}</td>
+                 <td>
+                   <button text="watched" className="watchedButton">watched</button>
+                </td>
+                </tr>
+              ) : <tr>
+              <td>{this.state.notFound}</td>
+          </tr>
+
+
+        }
       </tbody>
 
     ) 
