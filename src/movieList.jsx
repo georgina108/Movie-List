@@ -23,15 +23,6 @@ handleMovieListChanges(newList) {
   }
 
 
-showAllWatched() {
-
-
-}
-
-showAllToWatch() {
- 
-}
-
   render () {
     return (
       <tbody>
@@ -50,10 +41,13 @@ showAllToWatch() {
         </tr>
 
         {this.state.movies.length ?  this.state.movies.map((movie, i) => 
+            {movie['value'] = i}
+            {i++}
+            {console.log(movie)}
                 <tr key={i++}>
                  <td>{movie.title}</td>
                  <td>
-                   <ToggleFromWatchedToWatch/>
+                   <ToggleFromWatchedToWatch value = {i++}/>
                 </td>
                 </tr>
               ) : 

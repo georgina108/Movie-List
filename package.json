@@ -13,6 +13,7 @@
     "bootstrap": "^4.0.0-alpha.2",
     "jquery": "^2.2.1",
     "lodash": "^4.6.1",
+    "popper.js": "^1.14.3",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   },
@@ -20,8 +21,5 @@
     "babel-cli": "^6.6.5",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.5.0",
-    "chai": "^3.5.0",
-    "mocha": "2.3.3",
-    "sinon": "1.17.3"
   }
 }
