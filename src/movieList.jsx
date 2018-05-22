@@ -15,6 +15,7 @@ handleMovieAdditions(addition) {
   })
 }
 
+
 handleMovieListChanges(newList) {
       this.setState({
         movies: newList
@@ -42,10 +43,11 @@ handleMovieListChanges(newList) {
                 <tr key={i}>
                  <td>{movie.title}</td>
                  <td>
-                   <button text="watched" className="watchedButton">watched</button>
+                   <ToggleFromWatchedToWatch/>
                 </td>
                 </tr>
-              ) : <tr>
+              ) : 
+          <tr>
               <td>{this.state.notFound}</td>
           </tr>
 
