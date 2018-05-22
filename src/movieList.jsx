@@ -22,6 +22,16 @@ handleMovieListChanges(newList) {
       })
   }
 
+
+showAllWatched() {
+
+
+}
+
+showAllToWatch() {
+ 
+}
+
   render () {
     return (
       <tbody>
@@ -36,11 +46,11 @@ handleMovieListChanges(newList) {
           </th>
         </tr>
         <tr>
-          <CheckWatchedMovies/>
+          <CheckWatchedMovies movies={this.state.movies} showAllWatched={this.showAllWatched.bind(this)} showAllToWatch={this.showAllToWatch.bind(this)}/>
         </tr>
 
         {this.state.movies.length ?  this.state.movies.map((movie, i) => 
-                <tr key={i}>
+                <tr key={i++}>
                  <td>{movie.title}</td>
                  <td>
                    <ToggleFromWatchedToWatch/>
